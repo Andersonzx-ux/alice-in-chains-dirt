@@ -319,16 +319,7 @@ window.album = {
 [03:46.48] Yeah, yeah, yeah, yeah, yeah...
 [03:48.34] ` },
         {
-            number: 10, title: "Untitled", duration: "1:13", composers: ["Jerry Cantrell"], audio: "audio/10.flac", lyrics: `[00:04.26] Ha ha ha!
-[00:07.10] I am Iron Gland!
-[00:15.00] Ha ha ha!
-[00:17.55] Oh
-[00:22.43] Iron!
-[00:24.34] Oh ha ha ha
-[00:26.63] Ow!
-[00:39.30] Red rum, red rum!` },
-        {
-            number: 11, title: "Hate to Feel", duration: "5:16", composers: ["Jerry Cantrell / Layne Staley"], audio: "audio/11.flac", lyrics: `[00:21.01] What's gone wrong, I can't see straight
+            number: 10, title: "Hate to Feel", duration: "5:16", composers: ["Jerry Cantrell / Layne Staley"], audio: "audio/11.flac", lyrics: `[00:21.01] What's gone wrong, I can't see straight
 [00:31.40] Been too long, so full of hate
 [00:41.62] What the fuck will it take
 [00:45.39] Drown myself in my wake
@@ -382,7 +373,7 @@ window.album = {
 [04:55.90] Hate to feel, wish I couldn't feel at all
 [04:58.06] ` },
         {
-            number: 12, title: "Angry Chair", duration: "4:47", composers: ["Layne Staley / Jerry Cantrell"], audio: "audio/12.flac", lyrics: `[00:22.72] Sitting on an angry chair
+            number: 11, title: "Angry Chair", duration: "4:47", composers: ["Layne Staley / Jerry Cantrell"], audio: "audio/12.flac", lyrics: `[00:22.72] Sitting on an angry chair
 [00:27.53] Angry walls that steal the air
 [00:31.82] Stomach hurts and I don't care
 [00:36.32] What do I see across the way, hey
@@ -431,7 +422,7 @@ window.album = {
 [04:13.14] Get on your knees time to pray, boy
 [04:17.12] ` },
         {
-            number: 13, title: "Would?", duration: "3:28", composers: ["Jerry Cantrell"], audio: "audio/13.flac", lyrics: `[00:30.76] Know me broken by my master
+            number: 12, title: "Would?", duration: "3:28", composers: ["Jerry Cantrell"], audio: "audio/13.flac", lyrics: `[00:30.76] Know me broken by my master
 [00:40.56] Teach thee on child of love hereafter
 [00:49.19] Into the flood again
 [00:52.62] Same old trip it was back then
