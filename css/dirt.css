@@ -1,0 +1,34 @@
+/* Tema DIRT — sobrescreve a paleta e o clima do style.css */
+:root{
+  --c-black-main:#070605;--c-black-brown:#0d0b08;--c-brown-dark:#2a2118;--c-sepia-dark:#0c0a08;
+  --c-sepia-medium:#8a7f6a;--c-gold-main:#b4561f;--c-cream:#c9bfa6;--c-light:#e4dcc8;
+  --rgb-black-main:7,6,5;--rgb-black-brown:13,11,8;--rgb-brown-dark:42,33,24;--rgb-sepia-dark:12,10,8;
+  --rgb-gold-main:180,86,31;--rgb-cream:201,191,166;--rgb-light:228,220,200;
+  --f-serif:'Special Elite',monospace;--f-sans:'Inter',sans-serif;--f-display:'Rubik Dirt','Special Elite',cursive;
+  --radius-sm:0;--radius-md:0;--radius-lg:0;
+}
+body::before{opacity:.16}
+.ambient-background{filter:grayscale(.8) sepia(.6) contrast(1.3) brightness(.45)}
+#album-title{font-family:var(--f-display);font-weight:400;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--c-light);text-shadow:2px 0 #b4561f,-2px 0 #3d5a3a;animation:dirt-glitch 5s infinite steps(1)}
+#album-artist{font-family:var(--f-serif);letter-spacing:.3em;text-transform:uppercase;color:var(--c-gold-main)}
+@keyframes dirt-glitch{0%,92%,100%{transform:none;text-shadow:2px 0 #b4561f,-2px 0 #3d5a3a}
+  93%{transform:translate(-3px,1px) skewX(4deg);text-shadow:-4px 0 #b4561f,4px 0 #3d5a3a}
+  95%{transform:translate(3px,-1px);clip-path:inset(30% 0 40% 0)}96%{clip-path:none;transform:none}}
+.cover-frame{border:1px solid #b4561f66;box-shadow:0 0 0 6px #0008,0 20px 60px #000;filter:contrast(1.1) saturate(.85)}
+.vinyl-disc{filter:sepia(.4) contrast(1.2)}
+.track-item{border-bottom:1px dashed #b4561f33;transition:background .2s,padding-left .2s}
+.track-item:hover{background:#b4561f14;padding-left:14px}
+.track-item.active{background:linear-gradient(90deg,#b4561f33,transparent);border-left:3px solid #b4561f}
+.track-item.active .track-title{color:#e9a26b}
+.track-title,.current-track-info h3,.lyrics-header h3,.modal h2{font-family:var(--f-serif);text-transform:uppercase;letter-spacing:.08em}
+.lyrics-line{font-family:var(--f-serif);transition:color .3s,transform .3s,text-shadow .3s}
+.lyrics-line.active{color:#e9a26b;transform:translateX(8px);text-shadow:0 0 14px #b4561f88}
+.play-btn{border-radius:50%;background:#b4561f;color:#0a0706;box-shadow:0 0 30px #b4561f66}
+.control-btn.active{color:#b4561f}
+input[type=range]{accent-color:#b4561f}
+.modal-content{border:1px solid #b4561f66;background:#0d0b08;box-shadow:0 0 60px #b4561f22}
+/* vinheta suja + risco de fita */
+body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 45%,#000c 100%)}
+@media (prefers-reduced-motion:reduce){#album-title{animation:none}}
